@@ -27,7 +27,7 @@
 .allign{
     text-align: center;
     vertical-align: middle;
-    line-height: 400px;
+    line-height: 20px;
 }
 .inlineblock {
     display: inline-block;
@@ -48,4 +48,15 @@
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+.padding-left-40{
+    padding-left: 3%;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.img-center {margin:0 auto;}
+.font{
+    font-size: 2em;
 }

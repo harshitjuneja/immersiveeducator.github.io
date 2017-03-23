@@ -1,0 +1,51 @@
+.padding-top-105{
+    padding-top: 105px;
+}
+.padding-top-20{
+    padding-top: 23px;
+    padding-right: 20px;
+}
+.padding-top-50{
+    padding-top: 50px;
+
+}
+.background-deep-purple{
+    background: #673bb7;
+}
+.font-white{
+    color: #dddddd;
+}
+.margin-top-20{
+    margin-top: 20%;
+}
+.background-deep-grey{
+    background: #ececec;
+}
+.red{
+    color:red;
+}
+.allign{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 400px;
+}
+.inlineblock {
+    display: inline-block;
+    zoom: 1;
+    display: inline; /* ie hack */
+}
+.your-class{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top:20%;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}

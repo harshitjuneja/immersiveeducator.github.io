@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Material Design for Bootstrap</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design -->
+  <link href="dist/css/bootstrap-material-design.css" rel="stylesheet">
+  <link href="dist/css/ripples.min.css" rel="stylesheet">
+
+  <!-- Dropdown.js -->
+  <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+  <!-- Page style -->
+  <link href="index.css" rel="stylesheet">
+  <link href="dist/css/style.css" rel="stylesheet">
+  <!--<script src="dist/js/animate.css"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- jQuery -->
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+<!--Code Starts-->
+<div class="navbar navbar-fixed-bottom navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index%20-%20Copy.html">ImmersiveEducator</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="#why">Why</a></li>
+        <li><a href="#how">How</a></li>
+        <li><a href="#special">Special Thanks</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a  >Made with <span class="glyphicon red glyphicon-heart"> </span> by Team Tahelka</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <video autoplay="true" controls="controls" width="1" height="768" name="Video Name" src="demo/imgs/My%20Movie.mp4"></video>
+
+</div>
+<div id="why" class="card container ">
+  <div class="row">
+    <div class="col-lg-6">
+      <embed width="850" height="600" src="https://www.youtube.com/v/nKIu9yen5nc">
+    </div>
+    <div class="col-lg-2"></div>
+    <div class=" col-lg-4">
+      <div class="  padding-top-50 animated fadeInDownBig ">
+        <h1>What Schools don't teach?</h1>
+        <h3>Check out what the experts say!</h3>
+        <br>
+        <br>
+
+        <p><strong><h1>"Play</h1></strong></p>
+        <p> <h2>is our</h2></p>
+        <p><strong><h1>brain's</h1></strong></p>
+        <h2>favourite way of</h2>
+        <p><strong><h1>learning"</h1></strong></p>
+
+        <p><h3>- Diane Ackerman</h3></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<!--<div class="card container background-deep-grey">-->
+  <!--<div class="row">-->
+    <!--<div class="col-lg-6">-->
+      <!--<div class="jumbotron animated fadeInDownBig ">-->
+        <!--<h2>Made with <span class="glyphicon red glyphicon-heart"> </span> by Team Tahelka</h2>-->
+        <!--<a href="https://twitter.com/kartik_sharma07">@kartik_sharma07</a>-->
+        <!--|-->
+        <!--<a href="https://twitter.com/sayhitoharshit">@sayhitoharshit</a>-->
+        <!--|-->
+        <!--<a href="https://twitter.com/jatin7gupta1">@jatin7gupta</a>-->
+      <!--</div>-->
+      <!--<div class="card">-->
+        <!--<img class="img-responsive" src="demo/imgs/logo-with-gh.png"/>-->
+      <!--</div>-->
+
+
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+      <!--<div class="jumbotron animated fadeInDownBig ">-->
+        <!--<h3>Made possible with</h3>-->
+        <!--<img src="demo/imgs/unity-logo.png" class="img-responsive"/></div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<br>-->
+<!--<br>-->
+<div id="special" class="container card animated fadeInDown " style="background: white">
+  <div class="row ">
+
+    <div class="col-sm-5">
+      <img class="img-responsive "  src="demo/imgs/unity.jpg"/>
+    </div>
+
+    <div class="col-sm-3 padding-top-50">
+      <img src="demo/imgs/plus%20-%20Copy.png" height="150" width="150" class="img-responsive"/>
+    </div>
+
+    <div class="col-sm-3 ">
+      <img src="demo/imgs/hero-cardboard-download-mobile.jpg" class="img-responsive"/>
+    </div>
+
+  </div>
+
+</div>
+<div class="card">
+
+</div>
+<div class="card">
+
+</div>
+<div class="card">
+
+</div>
+<div class="card">
+
+</div>
+
+
+
+<script>
+  window.page = window.location.hash || "#about";
+
+  $(document).ready(function () {
+    if (window.page != "#about") {
+      $(".menu").find("li[data-target=" + window.page + "]").trigger("click");
+    }
+  });
+
+  $(window).on("resize", function () {
+    $("html, body").height($(window).height());
+    $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight());
+    $(".pages").height($(window).height());
+  }).trigger("resize");
+
+  $(".menu li").click(function () {
+    // Menu
+    if (!$(this).data("target")) return;
+    if ($(this).is(".active")) return;
+    $(".menu li").not($(this)).removeClass("active");
+    $(".page").not(page).removeClass("active").hide();
+    window.page = $(this).data("target");
+    var page = $(window.page);
+    window.location.hash = window.page;
+    $(this).addClass("active");
+
+
+    page.show();
+
+    var totop = setInterval(function () {
+      $(".pages").animate({scrollTop: 0}, 0);
+    }, 1);
+
+    setTimeout(function () {
+      page.addClass("active");
+      setTimeout(function () {
+        clearInterval(totop);
+      }, 1000);
+    }, 100);
+  });
+
+  function cleanSource(html) {
+    var lines = html.split(/\n/);
+
+    lines.shift();
+    lines.splice(-1, 1);
+
+    var indentSize = lines[0].length - lines[0].trim().length,
+        re = new RegExp(" {" + indentSize + "}");
+
+    lines = lines.map(function (line) {
+      if (line.match(re)) {
+        line = line.substring(indentSize);
+      }
+
+      return line;
+    });
+
+    lines = lines.join("\n");
+
+    return lines;
+  }
+
+  $("#opensource").click(function () {
+    $.get(window.location.href, function (data) {
+      var html = $(data).find(window.page).html();
+      html = cleanSource(html);
+      $("#source-modal pre").text(html);
+      $("#source-modal").modal();
+    });
+  });
+</script>
+
+<!-- Twitter Bootstrap -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="dist/js/material.js"></script>
+<script src="dist/js/ripples.min.js"></script>
+<script>
+  $.material.init();
+</script>
+
+
+<!-- Sliders -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+</script>
+
+<!-- Dropdown.js -->
+<script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+<script>
+  $("#dropdown-menu select").dropdown();
+</script>
+
+</body>
+</html>

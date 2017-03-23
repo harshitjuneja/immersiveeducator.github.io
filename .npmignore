@@ -1,0 +1,16 @@
+demo\
+fonts\
+scripts\
+test\
+
+.editorconfig
+.gitignore
+.jshintrc
+.npmignore
+.travis.yml
+.versions
+bootstrap-elements.html
+bower.json
+CONTRIBUTING.md
+index.html
+package.js
